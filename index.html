@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rtfmApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular & Firebase</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="mainCtrl">
+<!-- 	<a ui-sref="/#/threads">Threads</a>
+	<br><br>
+	<a ui-sref="/#/thread">Thread</a> -->
+
+	<div class="container" ui-view></div>
+
+
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js'></script>
+	<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/mainCtrl.js"></script>
+	<script src="app/threads/threadsCtrl.js"></script>
+	<script src="app/services/threadService.js"></script>
+	<script src="app/thread/threadCtrl.js"></script>
+
+</html>
